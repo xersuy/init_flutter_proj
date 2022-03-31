@@ -1,16 +1,58 @@
-# flutter_base_proj
+Stack(
+children: <Widget>[
+Container(
+color: Colors.red,
+width: 100,
+height: 100,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
+Container(
+color: Colors.blue,
+width: 80,
+height: 80,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
+Container(
+color: Colors.green,
+width: 60,
+height: 60,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
 
-A new Flutter project.
+---
 
-## Getting Started
+Row(
+mainAxisSize: MainAxisSize.max,
+mainAxisAlignment: MainAxisAlignment.center,
+crossAxisAlignment: CrossAxisAlignment.center,
+children: <Widget>[
+Container(
+color: Colors.red,
+width: 100,
+height: 100,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
+Container(
+color: Colors.blue,
+width: 100,
+height: 100,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
+Container(
+color: Colors.green,
+width: 100,
+height: 100,
+padding: const EdgeInsets.all(8.0),
+margin: const EdgeInsets.all(8.0),
+),
+],
+)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ListBody(children: item.map((i) => Text('$i')).toList()),
